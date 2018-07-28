@@ -326,3 +326,6 @@ target/
 /app/Config/database.php
 /vendors/*
 
+/java/.classpath
+/java/.project
+/java/.settings

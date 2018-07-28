@@ -1,0 +1,13 @@
+.container {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.container .container_title {
+  font-size: large;
+  text-align: left;
+}
+
+.container .container_desc {
+  color: #FF5053;
+}

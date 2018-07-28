@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>哈哈，小惊喜！</title>
+		<link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.3/weui.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="container_title">小姐姐，我观察你好久了！</div>
+			<div class="container_desc">
+				<h2>做我女朋友好不好</h2></div>
+			<div class="container_button">
+				<button class="weui-btn weui-btn_mini weui-btn_primary" id="btn_ok">好的</button>
+				<button class="weui-btn  weui-btn_mini weui-btn_warn" id="btn_cacel">不好</button>
+			</div>
+		</div>
+		<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+		<script type="application/javascript">
+			$("#btn_ok").click(function() {
+				var count = 0
+				while(count < 4) {
+					switch(count) {
+						case 1:
+							alert("我负责赚取养家！");
+							break;
+						case 2:
+							alert("我负责开车接你！");
+							break;
+						case 3:
+							alert("我负责");
+							break;
+					}
+					count++;
+				}
+				mail();
+			});
+			$("#btn_cacel").click(function() {
+				var count = 0
+				while(count < 4) {
+					switch(count) {
+						case 1:
+							alert("");
+							break;
+						case 2:
+							alert("你好2 " + count);
+							break;
+						case 3:
+							alert();
+							break;
+					}
+					count++;
+				}
+				mail();
+			});
+
+			function mail() {
+				data = {}
+				$.ajax({
+					type: "post",
+					url: "http://api.yoqi.me/mail",
+					data: data,
+					async: true
+				});
+			}
+		</script>
+	</body>
+
+</html>
